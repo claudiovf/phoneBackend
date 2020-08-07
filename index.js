@@ -11,7 +11,7 @@ app.use(cors())
 
 app.use(express.json())
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms :data'))
-
+app.use(express.static('build'))
 
 // const requestLogger = (request, response, next) => {
 //     console.log('Method:', request.method)
